@@ -119,7 +119,7 @@ class ParamIterator {
  public:
   typedef T value_type;
   typedef const T& reference;
-  typedef ptrdiff_t difference_type;
+  typedef ::std::ptrdiff_t difference_type;
 
   // ParamIterator assumes ownership of the impl_ pointer.
   ParamIterator(const ParamIterator& other) : impl_(other.impl_->Clone()) {}
